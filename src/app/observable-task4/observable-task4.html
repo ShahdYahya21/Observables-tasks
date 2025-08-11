@@ -1,0 +1,12 @@
+<h3>observable-task4 </h3>
+<input type="text" class = "myInput" placeholder="search for post">
+<ul>
+  @for (item of posts; track $index) {
+    <li style="margin-bottom: 10px;">
+      <p style="margin: 0;">ID: {{ item.id }}</p>
+      <p style="margin: 0;">User ID: {{ item.userId }}</p>
+      <p style="margin: 0;">Title: {{ item.title }}</p>
+      <p style="margin: 0;">Body: {{ item.body }}</p>
+    </li>
+  }
+</ul>
